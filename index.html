@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>DSC</title>
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Materialize icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- sweet Alert-->
+<link href="node_modules/sweetalert2/dist/sweetalert2.css" rel="stylesheet">
+<link href="node_modules/sweetalert2/dist/sweetalert2.all.js" rel="stylesheet">
+
+
+<!-- Custom styles for this template -->
+<link href="css/heroic-features.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<style>
+/* CSS */
+
+/* Brand Logo Icon CSS */
+i.large.material-icons {
+font-size: 60px;
+}
+
+/* Header CSS */
+h1 {
+font-family: 'Dancing Script', cursive;
+}
+
+/* img CSS */
+img {
+margin-bottom: 2rem;
+}
+
+</style>
+
+<div>
+<!-- Materialize CSS Navbar -->
+<div class="navbar-fixed">
+<nav class="grey darken-3">
+<div class="nav-wraper">
+<div class="container">
+<!-- Materialize CSS Brand Logo Icon -->
+<a href="#" class="brand-logo">
+<i class="large material-icons">filter_hdr</i>
+</a>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a href="#">Home</a></li>
+
+<li><a onclick="help()" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+
+<!-- Materialize CSS Grid -->
+<div class="center container">
+<h1>Our Products</h1>
+<div class="row">
+<div class="col s12 m4" onclick="pro_1()">
+<!-- Change me -->
+<!-- Photo credit to Guilherme Madaleno -->
+<img className="materialboxed"  height="250" width="270" src="./img/airpod.jpeg">
+</div>
+<div class="col s12 m4">
+<!-- Change me -->
+<img className="materialboxed" onclick="pro_2()" height="250" width="270" src="./img/pizza.jpeg">
+</div>
+<div class="col s12 m4">
+<!-- Change me -->
+<!-- Photo credit to Valdemaras D. -->
+<img className="materialboxed" onclick="pro_3()" height="250" width="270" src="./img/iphone.jpeg">
+</div>
+</div>
+<div class="row">
+<div class="col s12 m4">
+
+<img className="materialboxed" onclick="pro_4()" height="250" width="270" src="./img/pexels-photo-1661470.jpeg">
+</div>
+<div class="col s12 m4">
+
+<img className="materialboxed" onclick="pro_5()" height="250" width="270" src="./img/pexels-photo-761963.jpeg">
+</div>
+<div class="col s12 m4">
+
+<img className="materialboxed" onclick="pro_6()" height="250" width="270" src="./img/pexels-photo-577769.jpeg">
+</div>
+</div>
+<div class="row">
+<div class="col s12 m4">
+<!-- Change me -->
+<!-- Photo credit to Dominic Krainer -->
+<img className="materialboxed" onclick="pro_7()" height="250" width="270"  src="./img/mc2.jpg">
+</div>
+<div class="col s12 m4">
+<!-- Change me -->
+<!-- Photo credit to Greg Nunes -->
+<img className="materialboxed"onclick="pro_8()" height="250" width="270" src="./img/pexels-photo-207589.jpeg">
+</div>
+<div class="col s12 m4">
+<!-- Change me -->
+<!-- Photo credit to David Wirzba -->
+<img className="materialboxed" onclick="pro_9()"height="250" width="270"  src="./img/shoes.jpeg">
+</div>
+</div>
+</div>
+ <!-- Bootstrap core JavaScript -->
+ <script src="vendor/jquery/jquery.min.js"></script>
+
+ <script src="node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+
+
+
+ <script>
+
+   function pro_1(){
+     Swal.fire({
+       title: 'iPhone 7',
+       text: 'Price : $ 400',
+       type: 'sucees',
+       confirmButtonText: 'Cool'
+     })
+
+   }
+
+
+   function pro_2(){
+     Swal.fire({
+        title: 'Pizza',
+       text: 'Price : $ 12',
+       type: 'sucees',
+       confirmButtonText: 'Cool'
+     })
+
+   }
+
+   function pro_3(){
+     Swal.fire({
+        title: 'iPhone 7',
+       text: 'Price : $ 50',
+       type: 'sucees',
+       confirmButtonText: 'Cool'
+     })
+
+   }
+
+
+   function pro_4(){
+     Swal.fire({
+        title: 'Shoe',
+        text: 'Price : $ 100',
+        type: 'sucees',
+        confirmButtonText: 'Cool'
+     })
+
+   }
+
+   function pro_5(){
+    Swal.fire({
+        title: 'HeadPhone',
+        text: 'Price : $ 35',
+        type: 'sucees',
+        confirmButtonText: 'Cool'
+    })
+
+  }
+
+  function pro_6(){
+    Swal.fire({
+        title: 'Head set',
+        text: 'Price : $ 350',
+        type: 'sucees',
+        confirmButtonText: 'Cool'
+    })
+
+  }
+
+  function pro_5(){
+    Swal.fire({
+        title: 'iPhone 7',
+        text: 'Price : $ 35',
+        type: 'sucees',
+        confirmButtonText: 'Cool'
+    })
+
+  }
+
+  function help(){
+    Swal.fire({
+         title: 'Call us on 0548769251 for help !!',
+       animation: true,
+       customClass: 'animated tada'
+    })
+
+  }
+
+
+   $('#help').click(function(){
+     Swal.fire({
+       title: 'Call us on 0548769251 for help !!',
+       animation: true,
+       customClass: 'animated tada'
+     })
+
+   });
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
